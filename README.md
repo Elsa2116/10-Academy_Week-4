@@ -165,3 +165,4 @@ git add src/api Dockerfile docker-compose.yml .github/workflows/ci.yml
 git commit -m "Add FastAPI deployment and CI"
 git checkout main && git merge task-6
 ```
+ 
