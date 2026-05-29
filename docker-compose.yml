@@ -1,0 +1,11 @@
+services:
+  credit-risk-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - LOCAL_MODEL_PATH=data/processed/best_model.joblib
+      - MODEL_URI=models:/CreditRiskProbabilityModel/latest
+    volumes:
+      - ./data:/app/data
+      - ./mlruns:/app/mlruns
